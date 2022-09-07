@@ -225,6 +225,7 @@ span{
 .featured {
     color: #81868e;
     display: grid;
+    width: 100%;
 }
 .featured > h2 {
     font-size: 20px;
@@ -250,6 +251,7 @@ span{
     align-items: stretch;
     justify-items: stretch;
     margin-top: 50px;
+    width: 100%;
 }
 .footer_featured{
     height: 120px;
