@@ -253,6 +253,9 @@ span{
     margin-top: 50px;
     width: 100%;
 }
+.featured_img img{
+    width: 100%;
+}
 .footer_featured{
     height: 120px;
     display: flex;
