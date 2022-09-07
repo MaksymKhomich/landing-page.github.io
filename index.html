@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="HW1(3).css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,500;0,700;0,800;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./font-awesome-4.7.0/css/font-awesome.min.css">
+    <script src=" https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.4.5/swiper-bundle.min.js"></script>
+    <title>Grid Model</title>
+</head>
+<!-- Выполните макет страницы с img02.jpeg используя CSS3 Grid модель. 
+    Используйте медиа запросы и шаблоны для адаптивной верстки. 
+    (При уменьшении экрана – новости должны выстраиваться в колонку, 
+    текст прятаться – и оставаться только картинка с кнопкой на ссылку). -->
+<body>
+    <div class="grid">
+        <div class="scrollup">
+            <i class="fa fa-chevron-up"></i>
+        </div>
+
+        <div class="logo">
+            <a href="#">
+                <img id="logo" src="img/Bouncy.png" alt="image_logo">
+            </a>
+            
+            <div class="navBar">
+                <div><a href="#">Hello</div>
+                <div><a href="#about">About</a></div>
+                <div><a href="#services">Services</a></div>
+                <div><a href="#portofio">Portfolio</a></div>
+                <div><a href="#team">Team</a></div>
+                <div><a href="#blog">Blog</a></div>
+                <div><a href="#contacts">Contacts</a></div>
+            </div>
+            
+            <div class="menu">
+                
+                <a href="#">
+                    <img id="logo" src="img/Bouncy.png" alt="image_logo">
+                </a>
+                <input id="menu_toggle" type="checkbox" />
+                <label class="menu_btn" for="menu_toggle">
+                    <span></span>
+                </label>
+
+                <ul class="menu_box">
+                    <li class="menu_item"><a href="#">Home</a></li>
+                    <li class="menu_item"><a href="#about">About</a></li>
+                    <li class="menu_item"><a href="#services">Services</a></li>
+                    <li class="menu_item"><a href="#portofio">Portfolio</a></li>
+                    <li class="menu_item"><a href="#team">Team</a></li>
+                    <li class="menu_item"><a href="#blog">Blog</a></li>
+                    <li class="menu_item"><a href="#contacts">Contacts</a></li>
+                </ul>
+            </div>
+
+            <div class="helloText">WE ARE CODE CAFE</div>
+            <div class="helloText2">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum</div>
+            <div class="btnDown">
+                <img src="img\Ellipse 1 copy.png" alt="">
+                <img class="down" src="./img/arrow down.png" alt="arrow">
+            </div>
+        </div>
+        <div id="about" class="aboutUs">
+            <div>
+                <h2>THIS IS BOUNCY</h2>
+                <h3 style="font-size: 14px;font-family: Open Sans;">
+                    At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio.
+                </h3>
+                <button id="read">Read More</button>
+            </div>
+            <img id="ipad" src="../HW1/img/IPAD.png" alt="IPad">    
+        </div>
+        <div class="bouncyDetails">
+            <h2>
+                DETAILS ABOUT BOUNCY
+            </h2>
+            <h3>
+                At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
+            </h3>
+            <div class="details_logos">
+                <img src="img/heart.png" alt="img">
+                <img src="img/mouse.png" alt="img">
+                <img src="img/lamp.png" alt="img">
+            </div>
+            
+            <p class="details_header">
+                Creative Ideas
+            </p>
+            <div class="details_description">
+                <p>
+                    At <span>vero</span> eos et accusamus et iusto odio dignissimos <b>ducimus</b> qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores 
+                </p>
+                <p>
+                    At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque <b>corrupti quos</b> dolores et quas molestias <span>excepturi</span> sint occaecati cupiditate non provident, <b>similique</b> sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem r
+                </p>
+            </div>
+        </div>
+        <div class="featured">
+            <h2>
+                FEATURED PROJECTS
+            </h2>
+            <h3>
+                At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
+            </h3>
+            <div class="featured_img">
+                <img src="img/featuring1.png" alt="img">
+                <img src="img/featuring2.png" alt="img">
+                <img src="img/featuring3.png" alt="img">
+            </div>
+            <div class="footer_featured">
+                <span>
+                    At vero eos et <b>accusamus</b> et iusto odio dignissimos ducimus qui blanditiis 
+                </span>
+                <button>Submit Now</button>
+            </div>
+        </div>
+        <div id="services" class="services">
+            <h2>
+                OUR SERVICES
+            </h2>
+            <h3>
+                At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
+            </h3>
+            <div class="service_block">
+                <div class="services_logos">
+                    <img src="img/tools.png" alt="img">
+                    <img src="img/marker.png" alt="img">
+                    <img src="img/gamepad.png" alt="img">
+                    <img src="img/plug.png" alt="img">
+                </div>
+                <div class="services_description">
+                    <h2>
+                        Graphic Design
+                    </h2>
+                    <p>
+                        At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti
+                    </p>
+                    <p>
+                        quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. 
+                    </p>
+                </div>
+                <div class="services_diagrams">
+                    <img src="img/MARKETING.png" alt="img">
+                    <img src="img/DEVELOPING.png" alt="img">
+                    <img src="img/BUSINESS.png" alt="img">
+                </div>
+            </div>
+            <img id="imac" src="img/imac.png" alt="img">
+            <!-- <img src="img/footer_qoutes.png" alt="img"> -->
+            <div class="impressed">
+                    <h2>
+                        IMPRESSED ?
+                    </h2>
+                    <p>
+                        At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias
+                    </p>
+                    <p>
+                        - <b>ABDULLAH NOMAN</b>
+                    </p>
+                    <p>
+                        CREATICE DIRECTOR, <span>CODE CAFE</span>
+                    </p>
+                </div>
+
+        </div>
+        <div id="portofio" class="portofio">
+            <h2>
+                THE PORTFOLIO
+            </h2>
+            <h3>
+                At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
+            </h3>
+
+            <nav class="portfolio_nav">
+                <a class="portfolio_a" href="#">All Works</a>
+                <a class="portfolio_a" href="#">Print</a>
+                <a class="portfolio_a" href="#">Identity</a>
+                <a class="portfolio_a" href="#">Branding</a>
+                <a class="portfolio_a" href="#">Web</a>
+                <a class="portfolio_a" href="#">HTML</a>
+                <a class="portfolio_a" href="#">WordPress</a>
+            </nav>
+
+            <div class="portfolio_img">
+                <div>
+                    <img src="img/1.png" alt="img">
+                    <img src="img/2.png" alt="img">
+                    <img src="img/3.png" alt="img">
+                </div>
+                <div>   
+                    <img src="img/4.png" alt="img">
+                    <img src="img/5.png" alt="img">
+                    <img id="start" src="img/6.png" alt="img">
+                </div>
+                <div>
+                    <img src="img/7.png" alt="img">
+                    <img src="img/8.png" alt="img">
+                    <img src="img/9.png" alt="img">
+                </div>
+                <div>
+                    <img src="img/10.png" alt="img">
+                    <img src="img/11.png" alt="img">
+                    <img src="img/12.png" alt="img">
+                </div>       
+            </div>
+            <div class="footer_portfolio">
+                <span>
+                    At vero eos et <b>accusamus</b> et iusto odio <b>dignissimos</b> ducimus qui blanditiis 
+                </span>
+                <button>Start Project</button>
+            </div>
+        </div>
+        <div id="team" class="team">
+            <h2>
+                THE TEAM
+            </h2>
+
+            <h3>
+                At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
+            </h3>
+            <div>
+                <img src="img/photo Team 1.png" alt="img">
+    
+                <div class="skills">
+                    <img src="img/NAME AND POSITION.png" style="width: 250px;" alt="img">
+                    <img src="img/TEXT.png" style="width: 300px;" alt="img">
+                    <img src="img/SKILLS.png" style="width: 300px;" alt="img">
+                </div>
+    
+            </div>
+        </div>
+        <div class="clickContact">
+            <span>
+                Already Loved Us? Let’s talk!
+            </span>
+
+            <button>Contact Us</button>
+        </div>
+        <div class="testimonials">
+            <h2>
+                TESTIMONIALS
+            </h2>
+
+            <h3>
+                At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
+            </h3>
+            <div class="testimonials_card">
+                <img src="img/photo teamtest 1.png" alt="img">
+                <img src="img/testimonials TEXT.png" alt="img">
+            </div>
+
+        </div>
+        <div id="blog" class="news">
+                <h2>
+                    LATEST NEWS
+                </h2>
+    
+                <h3>
+                    At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
+                </h3>
+            <div class="swiper-container bigScreen">  
+                <div class="swiper-wrapper"> 
+
+                    <div class="slider-item swiper-slide">  
+                        <div class="slider-image-wrapper">
+                            <div class="blog_text">
+                                <h2>
+                                    The trending Landing Pages
+                                </h2>
+                                <span>
+                                    BY KABIR UDDIN
+                                </span>
+                                <p>
+                                    6950 Likes - 243 Comments - 703 shares
+                                </p>
+                                <p>
+                                    At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio...  
+                                </p>
+                            </div> 
+                            <button id="read_more">+ Read More</button>
+                        </div>  
+                    </div>  
+
+                    <div class="slider-item swiper-slide">  
+                        <div class="slider-image-wrapper">  
+                            <div class="blog_text">
+                                <h2>
+                                    The trending Landing Pages
+                                </h2>
+                                <span>
+                                    BY KABIR UDDIN
+                                </span>
+                                <p>
+                                    6950 Likes - 243 Comments - 703 shares
+                                </p>
+                                <p>
+                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat quod consequuntur cupiditate, commodi cumque qui magnam corrupti rem tempore incidunt repellat exercitationem ducimus, quidem voluptate in iste voluptatum, sapiente aut! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat quod consequuntur cupiditate, commodi cumque qui magnam corrupti rem tempore incidunt repellat exercitationem ducimus, quidem voluptate in iste voluptatum, sapiente aut!  
+                                </p>
+                            </div>
+                            <button id="read_more">+ Read More</button>
+                        </div>  
+                    </div>  
+
+                    <div class="slider-item swiper-slide">  
+                        <div class="slider-image-wrapper">  
+                            <div class="blog_text">
+                                <h2>
+                                    The trending Landing Pages
+                                </h2>
+                                <span>
+                                    BY KABIR UDDIN
+                                </span>
+                                <p>
+                                    6950 Likes - 243 Comments - 703 shares
+                                </p>
+                                <p>
+                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque qui voluptates totam reprehenderit fugit, nisi ea quasi, vero numquam soluta eaque debitis rerum autem est ex unde assumenda harum doloribus?
+                                    Dolor culpa eius nisi itaque praesentium quasi cum libero minima eligendi, nam perferendis ipsam enim, magnam accusantium ullam mollitia omnis? Magnam, labore libero? Ad voluptatum similique, at quo dignissimos natus.
+                                    Odit error nisi dolorem voluptatem quia labore enim, eum blanditiis, quis repellat provident aliquam fugiat! Expedita iure cum voluptatem minus necessitatibus id amet repellendus placeat facere! Minus libero sequi eos.  
+                                </p>
+                            </div>
+                            <button id="read_more">+ Read More</button>
+                        </div>
+                    </div>
+
+                    <div class="slider-item swiper-slide">  
+                        <div class="slider-image-wrapper">  
+                            <div class="blog_text">
+                                <h2>
+                                    The trending Landing Pages
+                                </h2>
+                                <span>
+                                    BY KABIR UDDIN
+                                </span>
+                                <p>
+                                    6950 Likes - 243 Comments - 703 shares
+                                </p>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor harum inventore tempora et cum, possimus odio tempore, deserunt quaerat aperiam ab labore quia? Distinctio aspernatur quam, tempore placeat dolore eveniet.
+                                    Officiis eaque suscipit doloremque ipsam recusandae aperiam voluptates sapiente ullam laboriosam? Vitae ipsa aspernatur cumque similique magnam! Corrupti sunt quasi iste autem ipsum impedit corporis, amet illum recusandae ad architecto.
+                                    Enim ullam consequuntur eos sint quae, consectetur quam totam quos itaque! Neque dolor harum, distinctio placeat illo aliquam, veritatis, et accusantium inventore voluptatem at assumenda adipisci dolores repudiandae eveniet ea!
+                                    Maiores aspernatur deserunt beatae quia libero, possimus repellendus, suscipit sunt debitis doloribus nulla sequi et vitae ullam eaque animi porro pariatur saepe. Eaque, perspiciatis deserunt! Eveniet, recusandae enim? Vero, consectetur.  
+                                </p>
+                            </div>
+                            <button id="read_more">+ Read More</button>
+                        </div>  
+                    </div>  
+                </div> 
+            
+                <div class="swiper-pagination"></div>  
+            </div>
+
+            <div class="smallScreen">  
+
+                <div class="blog_text">
+                    <h2>
+                        The trending Landing Pages
+                    </h2>
+                    <span>
+                        BY KABIR UDDIN
+                    </span>
+                    <p>
+                        6950 Likes - 243 Comments - 703 shares
+                    </p>
+                    <p>
+                        At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio...  
+                    </p>
+                    <button id="read-more">+ Read More</button>
+                </div> 
+
+                <div class="blog_text">
+                    <h2>
+                        The trending Landing Pages
+                    </h2>
+                    <span>
+                        BY KABIR UDDIN
+                    </span>
+                    <p>
+                        6950 Likes - 243 Comments - 703 shares
+                    </p>
+                    <p>
+                        At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio...  
+                    </p>
+                    <button id="read-more">+ Read More</button>
+                </div>
+
+                <div class="blog_text">
+                    <h2>
+                        The trending Landing Pages
+                    </h2>
+                    <span>
+                        BY KABIR UDDIN
+                    </span>
+                    <p>
+                        6950 Likes - 243 Comments - 703 shares
+                    </p>
+                    <p>
+                        At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio...  
+                    </p>
+                    <button id="read-more">+ Read More</button>
+                </div>
+
+                <div class="blog_text">
+                    <h2>
+                        The trending Landing Pages
+                    </h2>
+                    <span>
+                        BY KABIR UDDIN
+                    </span>
+                    <p>
+                        6950 Likes - 243 Comments - 703 shares
+                    </p>
+                    <p>
+                        At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio...  
+                    </p>
+                    <button id="read-more">+ Read More</button>
+                </div>
+
+                <div class="swiper-pagination"></div>  
+            </div>
+        </div>
+        <div class="price">
+            <h2>
+                Our Price
+            </h2>
+
+            <h3>
+                At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
+            </h3>
+            <div class="price_list">
+                <div>
+                    <p>PREMIUM</p>
+
+                    <div>
+                        <span>$60</span>
+                        <p>Per Month</p>
+                    </div>
+
+                </div>
+
+                <div>
+                    <ul>
+                        <li>Full Branding</li>
+                        <li>Project Management</li>
+                        <li>Unlimited Revisions</li>
+                        <li>24/7 h Service</li>
+                        <li>Free Domain</li>
+                        <li>Free Hosting</li>
+                    </ul>
+                    <p>
+                        <a href="#start">Let’s Start
+                            <img src="./img/arrow down.png" alt="arrow">
+                        </a>
+                    </p>  
+                </div>
+
+                <div>
+                    <p>EXCLUSIVE</p>
+                    <div>
+                        <span>$80</span>
+                        <p>Per Month</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="subcribe">
+            <h2>
+                SUBSCRIBE US
+            </h2>
+            <h3>
+                At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
+            </h3>
+            <div>
+                <input type="email" placeholder="Email Address">
+                <button>SUBMIT</button>
+            </div>
+        </div>
+        <div id="contacts" class="contacts">
+            <h2>
+                CONTACT US
+            </h2>
+            <h3>
+                At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
+            </h3>
+
+            <div>
+                <img src="img/EMAIL.png" alt="img">
+                <img src="img/ADDRESS.png" alt="img">
+                <img src="img/PHONE.png" alt="img">
+            </div>
+
+        </div>
+        <div class="email">
+            <div>
+
+                <div class="inputs">
+                    <input type="text" placeholder="Your Name">
+                    <input type="text" placeholder="Email Address">
+                    <input type="text" placeholder="Subject">
+                </div>
+
+                <textarea  id="" cols="30" rows="10"></textarea>
+
+                <button>SUBMIT NOW</button>
+
+            </div>
+        </div>
+        <div class="map">
+            
+        </div>
+        <div class="footer">
+            <h2>
+                BOUNCY
+            </h2>
+            <h3>
+                Copyright 2015. All rights Reserved
+            </h3>
+            <div>
+                <img src="img/facebook.png" alt="img">
+                <img src="img/twitter.png" alt="img">
+                <img src="img/linkedin.png" alt="img">
+                <img src="img/instagramm.png" alt="img">
+                <img src="img/vimeo.png" alt="img">
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+
+    <script>
+
+    $(() => {
+        $('.scrollup').click(() => {
+            $("html, body").animate({
+            scrollTop:0
+            },100);
+        })
+    })
+    $(window).scroll(() => {
+        if ($(this).scrollTop()>10) {
+            $('.scrollup').fadeIn();
+        }
+        else {
+            $('.scrollup').fadeOut();
+        }
+    });
+
+    let btn = document.querySelector(".down");
+    let div = document.querySelector(".aboutUs");
+    btn.addEventListener("click", () => {
+        div.scrollIntoView({block: "center", behavior:"smooth"})
+    })
+
+    let btnDown = document.querySelector(".scrollup");
+    let home = document.getElementById("logo");
+    btnDown.addEventListener("click", function() {
+        home.scrollIntoView({block: "end", behavior:"smooth"})
+    })
+
+    let toggle = document.getElementById("menu_toggle");
+    let menuItems = document.querySelector(".menu_box");
+    menuItems.addEventListener("click", () =>{
+        toggle.checked = false;
+    });
+
+    let swiper = new Swiper('.swiper-container', {  
+        slidesPerView: 1,  
+        spaceBetween: 20,  
+        effect: 'fade',  
+        loop: true,  
+        speed: 200, 
+        pagination: {  
+            el: '.swiper-pagination',  
+            clickable: true,  
+            dynamicBullets: true,
+        },
+    });
+
+    </script>
+</body>
+</html>
